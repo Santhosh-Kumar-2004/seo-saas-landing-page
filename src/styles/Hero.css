@@ -59,36 +59,41 @@
     z-index: 2;
 }
 
-/* Fade at bottom of image */
-.hero-image-container::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 110px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #000 100%);
-  z-index: 3;
-  pointer-events: none;
-  filter: blur(8px);
-}
-
-/* Green semi-circle glow (rainbow-like) */
+/* Green semi-circle glow that gradually merges */
 .hero-image-container::before {
     content: '';
     position: absolute;
-    bottom: -40px; /* shift slightly below image */
+    bottom: -40px; /* Shift slightly below image */
     left: 50%;
-    width: 200%; /* twice the image width */
-    height: 100%; /* enough height for glow */
+    width: 200%; /* Twice the image width */
+    height: 100%; /* Enough height for glow */
+    /* Use a more subtle radial gradient that fades to the background color */
     background: radial-gradient(ellipse at center top,
-        rgba(33, 163, 33, 0.5) 0%,
-        rgba(33, 163, 33, 0.3) 40%,
-        rgba(33, 163, 33, 0) 80%);
+        rgba(26, 211, 26, 0.4) 0%,
+        rgba(28, 173, 28, 0.336) 50%,
+        rgba(244, 247, 246, 0.11) 80%, /* Fade to background color */
+        rgba(244, 247, 246, 0) 100%
+    );
     transform: translateX(-50%);
-    border-radius: 50% 50% 0 0; /* top half of circle */
-    filter: blur(80px);
-    z-index: -1; /* behind the image */
+    /* Adjust border-radius to create a more organic, less perfectly round shape */
+    border-radius: 50% 50% 40% 40% / 100% 100% 0 0;
+    filter: blur(80px); /* Keep the strong blur for a soft effect */
+    z-index: -1; /* Behind the image */
+}
+
+/* Non-identifiable blur/fade at the bottom of the image */
+.hero-image-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    /* This gradient now fades from transparent to the body's background color (#f4f7f6), creating a seamless merge */
+    background: linear-gradient(to bottom, rgba(244, 247, 246, 0) 0%, rgb(0, 0, 0) 100%);
+    z-index: 3;
+    pointer-events: none;
+    filter: blur(8px);
 }
 
 /* Person image */
