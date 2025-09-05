@@ -1,0 +1,80 @@
+.navbar {
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2); /* transparent background */
+  backdrop-filter: blur(12px); /* glassy effect */
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #00c853;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00c853;
+  text-shadow: 0 0 8px rgba(0, 200, 83, 0.7);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Buttons */
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 22px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 15px;
+}
+
+.btn-green {
+  background: #00c853;
+  color: #fff;
+}
+
+.btn-green:hover {
+  box-shadow: 0 0 12px rgba(0, 200, 83, 0.8);
+}
+
+.btn-login {
+  background: #000;
+  color: #00c853;
+  border: 1px solid #00c853;
+}
+
+.btn-login:hover {
+  box-shadow: 0 0 12px rgba(0, 200, 83, 0.8);
+  background: #111;
+}
