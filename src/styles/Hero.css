@@ -12,18 +12,20 @@
     align-items: center;
     justify-content: center;
     /* background-color: #f4f7f6; */
+    /* background: linear-gradient(to bottom, rgba(244, 247, 246, 0) 0%, rgb(0, 0, 0) 100%); */
 }
 
 /* Container for all content on the hero section */
 .hero-content {
     position: relative;
     width: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 2; /* Ensures content is on top of any background elements */
+    /* background: linear-gradient(to bottom, rgba(244, 247, 246, 0) 0%, rgb(0, 0, 0) 100%); */
 }
 
 /* Hero Title - Positioned behind the image */
@@ -59,27 +61,30 @@
     z-index: 2;
 }
 
-/* Green semi-circle glow that gradually merges */
 .hero-image-container::before {
-    content: '';
-    position: absolute;
-    bottom: -40px; /* Shift slightly below image */
-    left: 50%;
-    width: 200%; /* Twice the image width */
-    height: 100%; /* Enough height for glow */
-    /* Use a more subtle radial gradient that fades to the background color */
-    background: radial-gradient(ellipse at center top,
-        rgba(26, 211, 26, 0.4) 0%,
-        rgba(28, 173, 28, 0.336) 50%,
-        rgba(244, 247, 246, 0.11) 80%, /* Fade to background color */
-        rgba(244, 247, 246, 0) 100%
-    );
-    transform: translateX(-50%);
-    /* Adjust border-radius to create a more organic, less perfectly round shape */
-    border-radius: 50% 50% 40% 40% / 100% 100% 0 0;
-    filter: blur(80px); /* Keep the strong blur for a soft effect */
-    z-index: -1; /* Behind the image */
+  content: '';
+  position: absolute;
+  bottom: 15%;             
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250%;                /* make the glow wide */
+  height: 300px;              /* height of the arc */
+  
+  /* Green arc glow */
+  background: radial-gradient(
+    ellipse at center bottom, /* arc grows upward */
+    rgba(26, 211, 26, 1 ) 0%,
+    rgba(26, 211, 26, 0.6) 30%,
+    rgba(26, 211, 26, 0.4) 50%,
+    rgba(26, 211, 26, 0) 100%
+  );
+
+  filter: blur(80px);          /* soft glow */
+  z-index: -1;                 /* behind image */
+  pointer-events: none;
+  overflow: hidden;
 }
+
 
 /* Non-identifiable blur/fade at the bottom of the image */
 .hero-image-container::after {
@@ -90,7 +95,7 @@
     width: 100%;
     height: 120px;
     /* This gradient now fades from transparent to the body's background color (#f4f7f6), creating a seamless merge */
-    background: linear-gradient(to bottom, rgba(244, 247, 246, 0) 0%, rgb(0, 0, 0) 100%);
+    /* background: linear-gradient(to bottom, rgba(244, 247, 246, 0) 0%, rgb(0, 0, 0) 100%); */
     z-index: 3;
     pointer-events: none;
     filter: blur(8px);

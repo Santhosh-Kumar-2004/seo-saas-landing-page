@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Hero.css";
-import person from "../assets/person_image.png"; // your PNG person
+import person from "../assets/person_image2.png"; // your PNG person
 
 const Hero = () => {
   return (
@@ -33,7 +33,7 @@ const Hero = () => {
           {/* Buttons below image */}
           <div className="hero-buttons">
             <button className="btn btn-green">Get Started</button>
-            <button className="btn btn-login">Login</button>
+            <button className="btn btn-login">Book a Meeting</button>
           </div>
         </div>
       </div>
