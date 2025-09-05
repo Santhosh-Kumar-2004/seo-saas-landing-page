@@ -31,7 +31,7 @@
 /* Hero Title - Positioned behind the image */
 .hero-title {
     position: absolute; /* Allows precise positioning */
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 800;
     color: #e0e0e0; /* A light gray to appear as a subtle background element */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
@@ -43,6 +43,7 @@
     pointer-events: none; /* Prevents text from being clickable */
     text-align: center;
     text-transform: capitalize;
+    margin-top: 75px;
 }
 
 .hero-title span {
@@ -60,6 +61,7 @@
     align-items: center;
     justify-content: center;
     z-index: 2;
+    margin-top: 20px;
 }
 
 .hero-image-container::before {
@@ -177,13 +179,13 @@
 }
 
 /* Login button style */
-.btn-login {
+.btn-login2 {
     background-color: transparent;
     border: 2px solid #555;
     color: #555;
 }
 
-.btn-login:hover {
+.btn-login2:hover {
     background-color: #555;
     color: #fff;
     transform: translateY(-2px);
@@ -193,7 +195,7 @@
 /* Tagline button style (top small button) */
 .tagline {
     border-radius: 20px;
-    padding: 8px 15px;
+    /* padding: 8px 15px;x */
     font-size: 0.85rem;
     font-weight: 500;
     background-color: #e0f0e0;
@@ -201,4 +203,20 @@
     border: none;
     align-self: flex-start; /* Aligns to the left */
     margin-bottom: 20px;
+    /* margin-top: 20px; */
+}
+
+.tagline-btn {
+   margin-top: 68px;
+   /* padding-top: 1px; */
+   padding: 10px 30px;
+   background: #000;
+   color: #00c853;
+   border: 1px solid #00c853;
+  /* justify-content: center; */
+}
+
+.tagline-btn:hover {
+  box-shadow: 0 0 12px rgba(0, 200, 83, 0.8);
+  background: #111;
 }

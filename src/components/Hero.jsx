@@ -7,11 +7,11 @@ const Hero = () => {
     <section className="hero">
       <div className="hero-content">
         {/* Top small button */}
-        <button className="btn btn-login tagline">Grow your business</button>
+        <button className="btn tagline-btn">Grow your business</button>
 
         {/* Sentence behind person */}
         <h1 className="hero-title">
-          Helping businesses achieve <br /><span>higher visibility</span>
+          Helping businesses achieve <br /><span>higher  _- visibility</span>
         </h1>
 
         {/* Paragraph */}
@@ -25,15 +25,15 @@ const Hero = () => {
           <img src={person} alt="Person" className="hero-image" />
 
           {/* Floating info cards */}
-          <div className="floating-card card1">600+ Projects</div>
+          {/* <div className="floating-card card1">600+ Projects</div>
           <div className="floating-card card2">⭐⭐⭐⭐⭐ (500+ Reviews)</div>
           <div className="floating-card card3">120+ Testimonials</div>
-          <div className="floating-card card4">Global Clients 🌍</div>
+          <div className="floating-card card4">Global Clients 🌍</div> */}
 
           {/* Buttons below image */}
           <div className="hero-buttons">
             <button className="btns btn-green">Get Started</button>
-            <button className="btns btn-login">Book a Meeting</button>
+            <button className="btns btn-login2">Book a Meeting</button>
           </div>
         </div>
       </div>
