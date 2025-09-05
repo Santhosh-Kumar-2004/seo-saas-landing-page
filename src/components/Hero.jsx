@@ -15,9 +15,9 @@ const Hero = () => {
         </h1>
 
         {/* Paragraph */}
-        <p className="hero-subtext">
+        {/* <p className="hero-subtext">
           We empower brands to rank better, grow faster, and reach more customers online.
-        </p>
+        </p> */}
 
         {/* Person image */}
         <div className="hero-image-container">
@@ -32,8 +32,8 @@ const Hero = () => {
 
           {/* Buttons below image */}
           <div className="hero-buttons">
-            <button className="btn btn-green">Get Started</button>
-            <button className="btn btn-login">Book a Meeting</button>
+            <button className="btns btn-green">Get Started</button>
+            <button className="btns btn-login">Book a Meeting</button>
           </div>
         </div>
       </div>

@@ -31,7 +31,7 @@
 /* Hero Title - Positioned behind the image */
 .hero-title {
     position: absolute; /* Allows precise positioning */
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 800;
     color: #e0e0e0; /* A light gray to appear as a subtle background element */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
@@ -42,6 +42,7 @@
     z-index: 1; /* Puts it behind the image */
     pointer-events: none; /* Prevents text from being clickable */
     text-align: center;
+    text-transform: capitalize;
 }
 
 .hero-title span {
@@ -138,21 +139,27 @@
 /* Buttons positioned on top of the image */
 .hero-buttons {
     position: absolute;
-    top: 50%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%); /* Centers the buttons on top of the image */
     display: flex;
     gap: 20px;
     z-index: 3;
+    background: rgba(0, 0, 0, 0.2); /* transparent background */
+    backdrop-filter: blur(12px);
+    /* margin: 5px; */
+    padding: 5px;
+    border-radius: 15px;
 }
 
 /* General button styles */
-.btn {
-    padding: 12px 25px;
-    font-size: 1rem;
+.btns {
+    padding: 8px 38px;
+    /* width: 58px; */
+    font-size: 14px;
     font-weight: 600;
     border: none;
-    border-radius: 50px;
+    border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
