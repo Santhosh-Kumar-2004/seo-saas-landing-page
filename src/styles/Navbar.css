@@ -66,6 +66,8 @@
 
 .btn-green:hover {
   box-shadow: 0 0 12px rgba(0, 200, 83, 0.8);
+  color: black;
+  /* font-weight: bold; */
 }
 
 .btn-login {
