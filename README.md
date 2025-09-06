@@ -28,4 +28,26 @@ It showcases features, pricing plans, proven results with charts, a portfolio se
 ---
 
 ## 📂 Project Structure  
+src/
+├── components/
+│ ├── Hero.jsx
+│ ├── Features.jsx
+│ ├── WhyHireMe.jsx
+│ ├── PricingSection.jsx
+│ ├── PortfolioSection.jsx
+│ ├── ContactSection.jsx
+│ └── Footer.jsx
+│
+├── styles/
+│ ├── hero.css
+│ ├── features.css
+│ ├── hireme.css
+│ ├── pricing.css
+│ ├── portfolio.css
+│ ├── contact.css
+│ └── footer.css
+│
+├── App.jsx
+├── main.jsx
+└── index.css
 
