@@ -77,5 +77,9 @@ The app will be available at http://localhost:5173/
     🥧 Pie Chart → Traffic sources breakdown
 
 ## 📸 Screenshots
-
 < Will update the link Soon >
+
+## 🔗 Useful Links
+Recharts Documentation - https://recharts.org/en-US/
+React Icons - https://react-icons.github.io/react-icons/
+
