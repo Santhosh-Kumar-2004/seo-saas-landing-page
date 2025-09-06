@@ -121,7 +121,7 @@
   backdrop-filter: blur(12px); /* glass effect */
   -webkit-backdrop-filter: blur(12px);
   padding: 12px 18px;
-  border-radius: 12px;
+  border-radius: 20px;
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
   font-size: 15px;
   font-weight: 500;
@@ -154,7 +154,7 @@
 /* Positioning for each card */
 .card1 {
     top: 30%;
-    left: -55%;
+    left: -60%;
     transform: rotate(-5deg); /* Subtle angle for dynamic look */
 }
 .card2 {
@@ -164,12 +164,12 @@
 }
 .card3 {
     bottom: 12%;
-    left: -65%;
+    left: -75%;
     transform: rotate(3deg);
 }
 .card4 {
-    bottom: 5%;
-    right: -55%;
+    bottom: 15%;
+    right: -75%;
     transform: rotate(-8deg);
 }
 
@@ -189,58 +189,65 @@
 }
 
 
-/* Buttons positioned on top of the image */
+/* hero.css */
+
+/* Button container */
 .hero-buttons {
     position: absolute;
     top: 85%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centers the buttons on top of the image */
+    transform: translate(-50%, -50%);
     display: flex;
     gap: 20px;
     z-index: 3;
-    background: rgba(0, 0, 0, 0.2); /* transparent background */
-    backdrop-filter: blur(12px);
-    /* margin: 5px; */
-    padding: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border-radius: 15px;
+    padding: 12px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* General button styles */
+/* Base styles for all buttons */
 .btns {
-    padding: 8px 38px;
-    /* width: 58px; */
-    font-size: 14px;
+    padding: 10px 10px;
+    font-size: 16px;
     font-weight: 600;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    letter-spacing: 0.5px;
+    white-space: nowrap; /* Prevents the text from wrapping */
 }
 
 /* Green button style */
 .btn-green {
     background-color: #28a745;
     color: #fff;
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
 }
 
 .btn-green:hover {
     background-color: #218838;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(40, 167, 69, 0.4);
 }
 
 /* Login button style */
 .btn-login2 {
     background-color: transparent;
     border: 2px solid #555;
-    color: #555;
+    color: #218838;
+    box-shadow: none;
 }
 
 .btn-login2:hover {
     background-color: #555;
     color: #fff;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Tagline button style (top small button) */
