@@ -1,0 +1,148 @@
+.pricing {
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.pricing-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.pricing-subtitle {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 50px;
+}
+
+.pricing-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Each card */
+.pricing-card {
+  position: relative;
+  width: 320px;
+  padding: 40px 25px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(33,163,33,0.3), rgba(0,0,0,0.7));
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.25);
+  color: #fff;
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(33,163,33,0.5);
+  border-color: rgba(33, 163, 33, 0.6);
+}
+
+/* Plan label on top of card */
+.plan-label {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #28a745;
+  color: #fff;
+  font-weight: 600;
+  padding: 6px 18px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.plan-desc {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.plan-price {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #00ff66;
+  margin-bottom: 20px;
+}
+
+.plan-price span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #aaa;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 30px 0;
+  text-align: left;
+}
+
+.plan-features li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tick {
+  color: #00ff66;
+  font-size: 1rem;
+}
+
+/* Show more button */
+.show-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 0 auto 20px auto;
+  padding: 8px 18px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 30px;
+  color: #00ff66;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.show-more:hover {
+  background: rgba(40,167,69,0.2);
+  box-shadow: 0 0 10px rgba(40,167,69,0.5);
+}
+
+/* Final CTA button */
+.plan-btn {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #28a745, #00c853);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.plan-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(40, 167, 69, 0.6);
+}
+
+/* Note below cards */
+.pricing-note {
+  margin-top: 40px;
+  font-size: 0.95rem;
+  color: #bbb;
+}
