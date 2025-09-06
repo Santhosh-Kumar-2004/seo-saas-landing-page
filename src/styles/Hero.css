@@ -39,7 +39,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     white-space: nowrap; /* Keeps the title on one line */
-    z-index: 1; /* Puts it behind the image */
+    z-index: 1; 
     pointer-events: none; /* Prevents text from being clickable */
     text-align: center;
     text-transform: capitalize;
@@ -83,7 +83,7 @@
   );
 
   filter: blur(80px);          /* soft glow */
-  z-index: -1;                 /* behind image */
+  z-index: -1;                
   pointer-events: none;
   overflow: hidden;
 }

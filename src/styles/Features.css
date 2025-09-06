@@ -1,0 +1,86 @@
+/* Section styles */
+.features {
+  text-align: center;
+  padding: 80px 10%;
+  color: #fff;
+}
+
+.features-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.features-subtitle {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 50px;
+}
+
+/* Features grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+/* Glassy + Gradient cards */
+.feature-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 25px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(33,163,33,0.25), rgba(0,0,0,0.45));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  transition: all 0.35s ease;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon styling */
+.feature-icon {
+  font-size: 28px;
+  color: #21a321;
+  flex-shrink: 0;
+}
+
+/* Hover effect */
+.feature-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 35px rgba(33, 163, 33, 0.5);
+  border-color: rgba(33, 163, 33, 0.6);
+}
+
+/* Card text */
+.feature-content h3 {
+  margin: 0 0 6px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.feature-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* Bottom button */
+.view-btn {
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(90deg, #21a321, #188f18);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(33, 163, 33, 0.4);
+}
+
+.view-btn:hover {
+  box-shadow: 0 0 25px rgba(33, 163, 33, 0.8);
+  transform: scale(1.05);
+}

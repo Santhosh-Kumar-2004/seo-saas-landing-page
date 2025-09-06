@@ -13,6 +13,21 @@ html, body {
   color: #fff; /* white text everywhere */
 }
 
+/* Background grid pattern across the body */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: -5; /* stays behind everything */
+  pointer-events: none;
+}
+
 /* Wrapper to constrain width if needed */
 .container {
   width: 80%;
