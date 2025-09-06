@@ -4,7 +4,7 @@ import {
   BarChart, Bar,
   PieChart, Pie, Cell, Legend
 } from "recharts";
-import "./portfolio.css";
+import "../styles/PortfolioSection.css";
 
 const trafficData = [
   { month: "Jan", visitors: 200 },
