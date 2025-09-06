@@ -1,6 +1,6 @@
 .why-hire {
   text-align: center;
-  padding: 80px 20px;
+  padding: 60px 20px;
   color: #fff;
   position: relative;
   z-index: 2;
@@ -35,7 +35,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 300px;
+  max-width: 340px;
   text-align: center;
 }
 
@@ -81,11 +81,11 @@
   font-weight: 600;
   color: #fff;
   /* Glassy background with subtle blur */
-  background: rgba(40, 167, 69, 0.2);
+  background: rgba(26, 85, 39, 0.062);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(30, 255, 0, 0.514);
-  border-radius: 50px; /* Fully rounded button */
+  border-radius: 20px; /* Fully rounded button */
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
