@@ -31,8 +31,8 @@ const PortfolioSection = () => {
     return (
         <section className="portfolio">
             <div className="portfolio-header">
-                <h2 className="portfolio-title">Proven Results for Our Clients</h2>
-                <p className="portfolio-subtitle">
+                <h2 className="features-title">Proven Results for Our Clients</h2>
+                <p className="features-subtitle">
                     From startups to enterprises, our SEO strategies consistently deliver measurable growth.
                 </p>
             </div>
