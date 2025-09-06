@@ -22,45 +22,62 @@
   color: #ddd;
 }
 
+/* Stats container - horizontal layout without cards */
 .why-stats {
   display: flex;
   justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
+  gap: 60px; /* Significant space between each stat block */
+  margin-bottom: 60px;
 }
 
+/* Individual stat block */
 .stat {
-  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  text-align: center;
 }
 
+/* Stat icons */
+.stat-icon {
+  font-size: 4rem; /* Large icon size */
+  color: #28a745;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+/* Stat title */
 .stat h3 {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #21a321;
-  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #444;
+  margin: 0 0 10px;
 }
 
+/* Stat description */
 .stat p {
   font-size: 1rem;
-  color: #bbb;
+  color: #777;
   line-height: 1.5;
 }
 
+/* "Hire Me" button */
 .hire-btn {
   padding: 14px 40px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  background: linear-gradient(135deg, #21a321, #137a13);
   color: #fff;
+  background: #28a745;
+  border: none;
+  border-radius: 50px; /* Fully rounded button */
+  cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 0 15px rgba(33, 163, 33, 0.4);
+  box-shadow: 0 5px 20px rgba(40, 167, 69, 0.3);
 }
 
 .hire-btn:hover {
-  box-shadow: 0 0 25px rgba(33, 163, 33, 0.8);
-  transform: translateY(-3px) scale(1.05);
+  background: #218838;
+  transform: translateY(-3px); /* Lifts the button */
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.5);
 }
