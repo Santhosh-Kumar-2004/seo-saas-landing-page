@@ -89,3 +89,12 @@ If you’d like to improve the UI, add new sections, or optimize performance, fe
 
 ## 📄 License
 This project is licensed under the MIT License – feel free to use and customize it.
+
+# 👨‍💻 Author
+## Santhosh Kumar
+
+---
+
+Do you want me to also include a **live demo deployment guide** (like steps for Vercel/Netlify), so that anyone visiting your repo can instantly try your project online?
+
+---
