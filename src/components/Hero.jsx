@@ -27,19 +27,19 @@ const Hero = () => {
 
           {/* Floating info cards */}
           <div className="floating-card card1">
-            <FaProjectDiagram className="card-icon" /> 600+ Projects Delivered
+            <FaProjectDiagram className="card-icon" /> <b className="highlight">600+</b> Projects Delivered
           </div>
 
           <div className="floating-card card2">
-            <FaStar className="card-icon" /> 500+ Reviews & Testimonials
+            <FaStar className="card-icon" /> <b className="highlight">500+</b> Reviews & Testimonials
           </div>
 
           <div className="floating-card card3">
-            <FaUsers className="card-icon" /> 200+ Active Clients Worldwide
+            <FaUsers className="card-icon" /> <b className="highlight">200+</b> Active Clients Worldwide
           </div>
 
           <div className="floating-card card4">
-            <FaChartLine className="card-icon" /> Driving 10x SEO Growth
+            <FaChartLine className="card-icon" /> <b className="highlight">Driving 10x</b> SEO Growth
           </div>
 
           {/* Buttons below image */}

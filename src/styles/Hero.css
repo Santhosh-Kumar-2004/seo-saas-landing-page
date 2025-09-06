@@ -116,7 +116,7 @@
 
 /* Floating card base styles */
 .floating-card {
-    position: absolute;
+  position: absolute;
   background: rgba(255, 255, 255, 0.08); /* subtle transparency */
   backdrop-filter: blur(12px); /* glass effect */
   -webkit-backdrop-filter: blur(12px);
@@ -140,7 +140,7 @@
     transform: translateY(-5px) scale(1.03); /* Lift and slightly enlarge the card */
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* A more prominent shadow on hover */
     box-shadow: 0 8px 35px rgba(33, 163, 33, 0.4); /* green glow */
-  border-color: rgba(33, 163, 33, 0.6);
+    border-color: rgba(33, 163, 33, 0.6);
 }
 
 /* Styles for the icons within the cards */
@@ -153,24 +153,39 @@
 
 /* Positioning for each card */
 .card1 {
-    top: 5%;
-    left: -15%;
+    top: 30%;
+    left: -55%;
     transform: rotate(-5deg); /* Subtle angle for dynamic look */
 }
 .card2 {
-    top: 25%;
-    right: -10%;
+    top: 30%;
+    right: -65%;
     transform: rotate(5deg);
 }
 .card3 {
-    bottom: 10%;
-    left: -20%;
+    bottom: 12%;
+    left: -65%;
     transform: rotate(3deg);
 }
 .card4 {
     bottom: 5%;
-    right: -15%;
+    right: -55%;
     transform: rotate(-8deg);
+}
+
+/* Styles for the highlighted text */
+.highlight {
+    font-weight: 700; /* Bolder font weight */
+    color: #28a745; /* A strong, distinct green color */
+    font-size: 1.7em; /* Slightly larger size than surrounding text */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* You can add a subtle animation for extra effect, but it is optional */
+.highlight:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+    display: inline-block; /* Required for transform to work */
+    transition: transform 0.2s ease;
 }
 
 
