@@ -44,13 +44,14 @@
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-radius: 22px;
-  padding: 40px 25px;
+  padding: 30px 25px;
   box-shadow: 0 8px 35px rgba(0, 0, 0, 0.4);
   transition: all 0.4s ease;
   border: 1px solid rgba(255, 255, 255, 0.12);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* padding-bottom: 40px; */
 }
 
 .portfolio-card:hover {
@@ -69,9 +70,9 @@
 }
 
 .card-desc {
-  font-size: 0.95rem;
-  color: #ccc;
-  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 22px;
 }
 
 /* Footer Button */
@@ -96,3 +97,4 @@
   transform: translateY(-3px);
   box-shadow: 0 8px 30px rgba(40, 167, 69, 0.5);
 }
+
