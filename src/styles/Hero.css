@@ -38,7 +38,7 @@
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    white-space: nowrap; /* Keeps the title on one line */
+    white-space: nowrap; 
     z-index: 1; 
     pointer-events: none; /* Prevents text from being clickable */
     text-align: center;
