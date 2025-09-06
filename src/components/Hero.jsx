@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Hero.css";
 import person from "../assets/person_image2.png"; // your PNG person
+import { FaProjectDiagram, FaStar, FaUsers, FaChartLine } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -25,10 +26,21 @@ const Hero = () => {
           <img src={person} alt="Person" className="hero-image" />
 
           {/* Floating info cards */}
-          <div className="floating-card card1">600+ Projects</div>
-          <div className="floating-card card2">⭐⭐⭐⭐⭐ (500+ Reviews)</div>
-          <div className="floating-card card3">120+ Testimonials</div>
-          <div className="floating-card card4">Global Clients 🌍</div>
+          <div className="floating-card card1">
+            <FaProjectDiagram className="card-icon" /> 600+ Projects Delivered
+          </div>
+
+          <div className="floating-card card2">
+            <FaStar className="card-icon" /> 500+ Reviews & Testimonials
+          </div>
+
+          <div className="floating-card card3">
+            <FaUsers className="card-icon" /> 200+ Active Clients Worldwide
+          </div>
+
+          <div className="floating-card card4">
+            <FaChartLine className="card-icon" /> Driving 10x SEO Growth
+          </div>
 
           {/* Buttons below image */}
           <div className="hero-buttons">
