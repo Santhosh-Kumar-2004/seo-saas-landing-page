@@ -26,7 +26,7 @@
 .why-stats {
   display: flex;
   justify-content: center;
-  gap: 60px; /* Significant space between each stat block */
+  gap: 60px;
   margin-bottom: 60px;
 }
 
@@ -39,45 +39,62 @@
   text-align: center;
 }
 
-/* Stat icons */
+/* Stat icons with green glowing effect */
 .stat-icon {
-  font-size: 4rem; /* Large icon size */
-  color: #28a745;
+  font-size: 4rem;
+  color: #28a745; /* Vibrant green color */
   margin-bottom: 15px;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+
+  /* Base glow */
+  filter: drop-shadow(0 0 8px rgba(40, 167, 69, 0.3));
 }
 
-/* Stat title */
+.stat-icon:hover {
+  transform: scale(1.15); /* Slightly enlarges the icon on hover */
+  color: #28a745;
+  filter: drop-shadow(0 0 15px rgba(40, 167, 69, 0.7))
+          drop-shadow(0 0 30px rgba(40, 167, 69, 0.5))
+          drop-shadow(0 0 45px rgba(30, 167, 69, 0.3));
+}
+
+
+/* Stat title - Now white */
 .stat h3 {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #444;
+  color: #ffffff; /* White text for visibility on a dark background */
   margin: 0 0 10px;
 }
 
-/* Stat description */
+/* Stat description - Now a lighter color */
 .stat p {
   font-size: 1rem;
-  color: #777;
+  color: #e0e0e0; /* Off-white color for contrast */
   line-height: 1.5;
 }
 
-/* "Hire Me" button */
+/* "Hire Me" button with a glassy background and green effect */
 .hire-btn {
   padding: 14px 40px;
   font-size: 1.1rem;
   font-weight: 600;
   color: #fff;
-  background: #28a745;
-  border: none;
+  /* Glassy background with subtle blur */
+  background: rgba(40, 167, 69, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(30, 255, 0, 0.514);
   border-radius: 50px; /* Fully rounded button */
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 20px rgba(40, 167, 69, 0.3);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
 .hire-btn:hover {
-  background: #218838;
+  /* Fills with solid green on hover */
+  background: #28a745;
   transform: translateY(-3px); /* Lifts the button */
   box-shadow: 0 8px 25px rgba(40, 167, 69, 0.5);
+  border-color: transparent; /* Hides the border on hover */
 }
