@@ -80,21 +80,32 @@
   font-size: 1.1rem;
   font-weight: 600;
   color: #fff;
-  /* Glassy background with subtle blur */
-  background: rgba(26, 85, 39, 0.062);
+  background: rgba(40, 167, 69, 0.2);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(30, 255, 0, 0.514);
-  border-radius: 20px; /* Fully rounded button */
+  border: none; /* Remove default border */
+  border-radius: 50px; 
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  position: relative; /* Needed for the top border effect */
+  overflow: hidden;
 }
 
 .hire-btn:hover {
-  /* Fills with solid green on hover */
   background: #28a745;
-  transform: translateY(-3px); /* Lifts the button */
+  transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(40, 167, 69, 0.5);
-  border-color: transparent; /* Hides the border on hover */
+}
+
+/* Top border glow effect on hover */
+.hire-btn:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px; /* Thickness of the top border */
+  /* background: linear-gradient(90deg, #28a745, #00ff66, #28a745); */
+  /* box-shadow: 0 0 10px rgba(40, 167, 69, 0.8); */
 }
