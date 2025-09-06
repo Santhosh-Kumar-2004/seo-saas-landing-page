@@ -11,7 +11,7 @@ const Hero = () => {
 
         {/* Sentence behind person */}
         <h1 className="hero-title">
-          Helping businesses achieve <br /><span>higher  _- visibility</span>
+          Helping businesses achieve <br /><span>higher  _ visibility</span>
         </h1>
 
         {/* Paragraph */}
@@ -25,10 +25,10 @@ const Hero = () => {
           <img src={person} alt="Person" className="hero-image" />
 
           {/* Floating info cards */}
-          {/* <div className="floating-card card1">600+ Projects</div>
+          <div className="floating-card card1">600+ Projects</div>
           <div className="floating-card card2">⭐⭐⭐⭐⭐ (500+ Reviews)</div>
           <div className="floating-card card3">120+ Testimonials</div>
-          <div className="floating-card card4">Global Clients 🌍</div> */}
+          <div className="floating-card card4">Global Clients 🌍</div>
 
           {/* Buttons below image */}
           <div className="hero-buttons">

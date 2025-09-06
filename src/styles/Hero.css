@@ -133,7 +133,7 @@
     transform: scale(1.05);
 }
 
-.card1 { top: -20px; left: 10%; } /* Top-left */
+.card1 { top: 170px; left: -70%; } /* Top-left */
 .card2 { top: 20%; right: 0; transform: translateY(-50%); } /* Right side */
 .card3 { bottom: 10%; left: 0; } /* Bottom-left */
 .card4 { bottom: -20px; right: 20%; } /* Bottom-right */
@@ -207,13 +207,17 @@
 }
 
 .tagline-btn {
-   margin-top: 68px;
+   margin-top: 60px;
    /* padding-top: 1px; */
-   padding: 10px 30px;
+   padding: 12px 30px;
    background: #000;
    color: #00c853;
    border: 1px solid #00c853;
   /* justify-content: center; */
+  border-radius: 50px;
+  font-size: 22px;
+  /* margin-bottom: 5px; */
+  text-transform: capitalize;
 }
 
 .tagline-btn:hover {
