@@ -75,3 +75,7 @@ The app will be available at http://localhost:5173/
     📈 Line Chart → Organic traffic growth
     📊 Bar Chart → Conversions before vs after SEO
     🥧 Pie Chart → Traffic sources breakdown
+
+## 📸 Screenshots
+
+< Will update the link Soon >
