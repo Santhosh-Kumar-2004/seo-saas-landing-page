@@ -6,6 +6,7 @@ import WhyHire from './components/WhyHire'
 import PricingSection from './components/PricingSection'
 import PortfolioSection from './components/PortfolioSection'
 import ContactSection from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -23,6 +24,8 @@ function App() {
     <PortfolioSection />
     <hr style={{ border: '1px solid rgba(255, 255, 255, 0.3)' }} />
     <ContactSection />
+    <hr style={{ border: '1px solid rgba(255, 255, 255, 0.3)' }} />
+    <Footer />
     </>
   )
 }
