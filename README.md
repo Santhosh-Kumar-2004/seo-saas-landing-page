@@ -69,3 +69,9 @@ npm install
 npm run dev
 
 The app will be available at http://localhost:5173/
+
+## 📊 Portfolio Section (Interactive Charts)
+### We used Recharts for stunning graphs:
+    📈 Line Chart → Organic traffic growth
+    📊 Bar Chart → Conversions before vs after SEO
+    🥧 Pie Chart → Traffic sources breakdown
