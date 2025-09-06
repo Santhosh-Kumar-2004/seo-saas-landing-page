@@ -1,0 +1,66 @@
+.why-hire {
+  text-align: center;
+  padding: 80px 20px;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.why-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #21a321;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.why-subtitle {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 50px;
+  color: #ddd;
+}
+
+.why-stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.stat {
+  max-width: 280px;
+}
+
+.stat h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #21a321;
+  margin-bottom: 10px;
+}
+
+.stat p {
+  font-size: 1rem;
+  color: #bbb;
+  line-height: 1.5;
+}
+
+.hire-btn {
+  padding: 14px 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #21a321, #137a13);
+  color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(33, 163, 33, 0.4);
+}
+
+.hire-btn:hover {
+  box-shadow: 0 0 25px rgba(33, 163, 33, 0.8);
+  transform: translateY(-3px) scale(1.05);
+}
