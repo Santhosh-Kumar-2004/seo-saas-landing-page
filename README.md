@@ -60,5 +60,8 @@ src/
 ```bash
 git clone https://github.com/your-username/seoboost.git
 cd seoboost
+```
 
+### 2. Install Dependencies
+npm install
 
