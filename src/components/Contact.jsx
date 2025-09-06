@@ -29,6 +29,7 @@ const ContactSection = () => {
             <FaMapMarkerAlt className="info-icon" />
             <span>Bengaluru, India</span>
           </div>
+          <p className="sec-subtitle">Connect with us for more information.</p>
         </div>
 
         {/* Right - Form */}

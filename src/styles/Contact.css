@@ -45,7 +45,7 @@
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
-  text-align: center;
+  /* text-align: center; */
 }
 
 .contact-info h3 {
@@ -69,12 +69,32 @@
   margin: 15px 0;
   font-size: 1rem;
   color: #ddd;
-  text-align: center;
+  /* text-align: center; */
+}
+
+.info-item span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  /* color: #28a745; */
 }
 
 .info-icon {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #28a745;
+  margin: 10px;
+}
+
+.info-icon:hover {
+  /* background: rgba(40, 167, 69, 0.2);
+  transform: scale(1.2); 
+  box-shadow: 0 0 15px rgba(40, 167, 69, 0.7);
+  color: #3cf55c;  */
+
+  transform: scale(1.15); /* Slightly enlarges the icon on hover */
+  color: #28a745;
+  filter: drop-shadow(0 0 5px rgba(20, 117, 19, 0.7))
+          drop-shadow(0 0 10px rgba(40, 167, 69, 0.5))
+          drop-shadow(0 0 15px rgba(30, 167, 69, 0.3));
 }
 
 /* Right - form */
@@ -124,9 +144,11 @@
   transform: translateY(-3px);
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
+.sec-subtitle {
+  font-size: 1rem;
+  color: #cccccc36;
+  margin-top: 20px;
+  text-align: center;
+  bottom: 10%;
+  top: 90%;
 }
