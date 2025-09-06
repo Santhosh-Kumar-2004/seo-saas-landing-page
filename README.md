@@ -87,3 +87,5 @@ React Icons - https://react-icons.github.io/react-icons/
 # Contributions are welcome!
 If you’d like to improve the UI, add new sections, or optimize performance, feel free to fork this repo and submit a PR.
 
+## 📄 License
+This project is licensed under the MIT License – feel free to use and customize it.
