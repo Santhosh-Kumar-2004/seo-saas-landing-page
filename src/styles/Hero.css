@@ -163,13 +163,13 @@
     transform: rotate(5deg);
 }
 .card3 {
-    bottom: 12%;
-    left: -75%;
+    bottom: 15%;
+    left: -85%;
     transform: rotate(3deg);
 }
 .card4 {
-    bottom: 15%;
-    right: -75%;
+    bottom: 11%;
+    right: -85%;
     transform: rotate(-8deg);
 }
 
@@ -194,7 +194,7 @@
 /* Button container */
 .hero-buttons {
     position: absolute;
-    top: 85%;
+    top: 88%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
