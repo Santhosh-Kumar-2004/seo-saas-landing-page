@@ -1,0 +1,92 @@
+/* Portfolio Section */
+.portfolio {
+  position: relative;
+  width: 100%;
+  padding: 80px 20px;
+  background: #0c0c0c; /* dark background to make charts pop */
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+}
+
+.portfolio-header {
+  margin-bottom: 50px;
+}
+
+.portfolio-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.portfolio-subtitle {
+  font-size: 1.1rem;
+  color: #aaa;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Portfolio Cards */
+.portfolio-card {
+  background: linear-gradient(135deg, rgba(40, 167, 69, 0.25), rgba(0, 0, 0, 0.6));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.35s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(40, 167, 69, 0.4);
+  border-color: rgba(40, 167, 69, 0.5);
+}
+
+/* Card Content */
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #28a745;
+}
+
+.card-desc {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+/* Footer Button */
+.portfolio-footer {
+  margin-top: 40px;
+}
+
+.portfolio-btn {
+  background: #28a745;
+  color: #fff;
+  padding: 14px 35px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+}
+
+.portfolio-btn:hover {
+  background: #218838;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(40, 167, 69, 0.5);
+}
