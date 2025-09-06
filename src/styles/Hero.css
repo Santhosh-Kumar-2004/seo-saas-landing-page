@@ -276,6 +276,7 @@
   font-size: 22px;
   /* margin-bottom: 5px; */
   text-transform: capitalize;
+  margin-bottom: 5px;
 }
 
 .tagline-btn:hover {
