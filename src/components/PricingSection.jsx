@@ -5,8 +5,8 @@ import "../styles/PricingSection.css";
 export default function PricingSection() {
   return (
     <section className="pricing">
-      <h2 className="pricing-title">Our Pricing Plans</h2>
-      <p className="pricing-subtitle">
+      <h2 className="features-title">Our Pricing Plans</h2>
+      <p className="features-subtitle">
         Choose the plan that best fits your business goals and scale with us.
       </p>
 
@@ -14,7 +14,7 @@ export default function PricingSection() {
         {/* Starter Plan */}
         <div className="pricing-card">
           <div className="plan-label">Starter</div>
-          <p className="plan-desc">Perfect for freelancers and beginners</p>
+          <p className="plan-desc">Perfect for freelancers, beginners and startups</p>
           <h3 className="plan-price">$19<span>/mo</span></h3>
           <ul className="plan-features">
             <li><FaCheck className="tick"/> Basic analytics</li>
@@ -33,7 +33,7 @@ export default function PricingSection() {
         <div className="pricing-card">
           <div className="plan-label">Growth</div>
           <p className="plan-desc">Ideal for small to medium businesses</p>
-          <h3 className="plan-price">$49<span>/mo</span></h3>
+          <h3 className="plan-price main-price">$49<span style={{ fontSize: "0.8rem", color: "#000000ff" }}>/mo</span></h3>
           <ul className="plan-features">
             <li><FaCheck className="tick"/> Advanced analytics</li>
             <li><FaCheck className="tick"/> Unlimited projects</li>
@@ -57,7 +57,7 @@ export default function PricingSection() {
             <li><FaCheck className="tick"/> Dedicated support</li>
             <li><FaCheck className="tick"/> Custom integrations</li>
             <li><FaCheck className="tick"/> Advanced security</li>
-            <li><FaCheck className="tick"/> Unlimited users</li>
+            <li><FaCheck className="tick "/> Unlimited users</li>
           </ul>
           <button className="show-more">
             Show More <FaChevronDown />
