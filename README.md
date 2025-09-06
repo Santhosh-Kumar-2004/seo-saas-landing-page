@@ -83,3 +83,7 @@ The app will be available at http://localhost:5173/
 Recharts Documentation - https://recharts.org/en-US/
 React Icons - https://react-icons.github.io/react-icons/
 
+## 🤝 Contributing
+# Contributions are welcome!
+If you’d like to improve the UI, add new sections, or optimize performance, feel free to fork this repo and submit a PR.
+
